@@ -3,7 +3,7 @@
 **MyCommander** is a fast two-pane terminal file manager written in Rust.
 It is inspired by Total Commander, M602, Norton Commander, and Midnight Commander, but aims for a modern TUI workflow: keyboard-first navigation, optional mouse support, remote panels, archives as folders, built-in viewers/editors, and developer tools directly inside the file manager.
 
-![MyCommander](mycommander.png)
+![MyCommander](images/mycommander.png)
 
 ## Core Idea
 
