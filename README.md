@@ -61,7 +61,7 @@ The project is built on:
 ### File Operations
 
 - Copy with `F5`, including confirmation, progress, speed, ETA, and cancellation.
-![Copy progress dialog](<CopyDialog.png>)
+![Copy progress dialog](<images/CopyDialog.png>)
 
 - Move and rename with `F6`.
 - Delete with `F8` or `Del`, including confirmation.
@@ -71,7 +71,7 @@ The project is built on:
 - Rename through a dialog with `F2`.
 - Calculate directory size asynchronously with `Space`, using a cache.
 - File or directory properties dialog via `Alt+Enter`.
-![Properties dialog](<Properties.png>)
+![Properties dialog](<images/Properties.png>)
 - Change attributes where supported by the active backend.
 - Open files with an external program according to configured associations.
 
@@ -84,9 +84,9 @@ The project is built on:
 
 - Copying can be moved to the background from the copy dialog with `Ctrl+J`.
 - Background copy jobs are minimized into the bottom area of the UI.
-![Background copy jobs in bottom bar](<Jobs.png>)
+![Background copy jobs in bottom bar](<images/Jobs.png>)
 - Pressing `Ctrl+J` again opens the **Operation Queue**, where active jobs are visible.
-![Operation Queue](<JobsDialog.png>)
+![Operation Queue](<images/JobsDialog.png>)
 
 Running jobs can be controlled with:
 
@@ -96,13 +96,13 @@ Running jobs can be controlled with:
 - `R` - retry after failure
 
 ### Tabs
-![[Tabs.png]]
+![Tabs](<images/Tabs.png>)
 - List of files supports tabs
 - List of terminals/consoles support tabs
 - Document workspace support tabs
 - `CTRL+T` to add new tab
 - by clicking at order/total tabs you get list of tabs to quick select
-![[TabsQuickList.png]]
+![TabsQuickList](<images/TabsQuickList.png>)
 - by clicking + you can also add new tab
 
 ### Selection, Filters, and Colors
@@ -123,7 +123,7 @@ Running jobs can be controlled with:
 #### Inline Quick Search
 
 - Inline quick search starts when typing a regular character in a panel.
-![Inline quick search](<Filter.png>)
+![Inline quick search](<images/Filter.png>)
 The active query is shown at the bottom. Matching items are highlighted in the file list. You can move between matches with the arrow keys. The typed text does not have to match only the beginning of the filename.
 
 - Jump mode in the style of Total Commander: typing moves the cursor to the matching item.
@@ -132,14 +132,14 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 
 #### Quick Open
 
-![Quick Open](<QuickOpen.png>)
+![Quick Open](<images/QuickOpen.png>)
 
 - Quick Open via `Ctrl+P` quickly finds an item in the active panel and its subdirectories.
 - Quick Open supports multi-token search, recent items, recursive local scanning, and `Enter`, `F3`, `F4` actions.
 
 #### Command Palette
 
-![Command Palette](<CommandPalette.png>)
+![Command Palette](<images/CommandPalette.png>)
 
 - Command Palette via `Ctrl+Shift+P` or `Ctrl+Alt+P`.
 - The Command Palette is context-aware: it offers different actions for files, directories, selections, archives, remote panels, the viewer, the editor, the REST client, or the terminal overlay.
@@ -147,7 +147,7 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 
 #### Standard File Search
 
-![Find Files dialog](<FindFiles.png>)
+![Find Files dialog](<images/FindFiles.png>)
 
 - `Alt+F7` searches by name, partial name, file contents, and date.
 - Search runs asynchronously, streams results as they are found, can be cancelled, and can feed results into a panel or save them as a list.
@@ -168,12 +168,12 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 
 ### Document Workspace
 
-![Document Workspace](<DocumentWorkspace.png>)
+![Document Workspace](<images/DocumentWorkspace.png>)
 
 - A workspace showing all currently open documents, both viewers and editors.
 - Documents are stored in separate tabs.
 - Clicking the open-tab count opens a quick tab switcher and closer.
-![Document Workspace tab switcher](<DocumentWorkspaceTabs.png>)
+![Document Workspace tab switcher](<images/DocumentWorkspaceTabs.png>)
 - Available via `F12`.
 
 ### Quick preview
@@ -338,52 +338,6 @@ The inline terminal can use these commands for quick connections:
 - Synchronize directories for visual comparison of two panels.
 - Job queue operations: progress, cancel, pause, retry, and discard depending on job type.
 - Log overlay helps track output and diagnostics without leaving the application.
-
-### Performance and Reliability
-
-- UI stays responsive thanks to background workers and asynchronous operations.
-- Long copies and network transfers share a unified progress model.
-- Large directories use virtual scrolling.
-- File type detection is cached in `FileEntry`.
-- Expensive local operations run outside the main render loop.
-- Release profile uses optimization, LTO, and strip.
-
-## Installation and Running
-
-```bash
-git clone <repo-url>
-cd MyCommander
-cargo run --release
-```
-
-For development:
-
-```bash
-cargo check
-cargo test
-cargo clippy -- -D warnings
-cargo fmt --check
-```
-
-## Configuration
-
-On Windows, user configuration is typically located at:
-
-```text
-%APPDATA%\mycommander\config.toml
-```
-
-Configuration includes:
-
-- general panel behavior,
-- color theme,
-- columns,
-- file color rules,
-- saved filters,
-- keybindings,
-- external viewers and editors,
-- syntax highlighting,
-- command line and tool settings.
 
 ## License
 
