@@ -1,0 +1,27 @@
+# "Deep Space"
+
+bg = "#121326"
+fg = "#d7dafc"
+
+accent = "#8b7dff"
+
+panel_border = "#5e63a8"
+panel_border_active = "#9d8cff"
+
+selection_bg = "#ff4d6d"
+selection_fg = "#ffffff"
+
+cursor_bg = "#b8a8ff"
+cursor_fg = "#0c0b18"
+
+status_bar_bg = "#0a0b16"
+status_bar_fg = "#bfc7ff"
+
+fn_key_bg = "#1c1d38"
+fn_key_fg = "#d1d6ff"
+
+header_fg = "#ffd670"
+dir_fg = "#9ecbff"
+
+danger_bg = "#70263a"
+danger_fg = "#ffd6df"

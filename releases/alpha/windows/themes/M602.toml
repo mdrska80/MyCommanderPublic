@@ -1,0 +1,38 @@
+# MyCommander — Dark Blue Terminal Theme (inspired by screenshot)
+
+bg = "#0000AA"                # hlavní tmavě modré pozadí
+fg = "#5BF1FF"                # světlý text
+
+accent = "#00FFFF"
+panel_border = "#1f4f75"
+panel_border_active = "#5fd7ff"
+
+selection_bg = "#264f78"      # výběr (jemná modrá)
+selection_fg = "#ffffff"
+
+cursor_bg = "#5fd7ff"
+cursor_fg = "#000000"
+
+status_bar_bg = "#00A8B0"
+status_bar_fg = "#cdd9e5"
+
+fn_key_bg = "#00A8B0"
+fn_key_fg = "#000000"
+
+header_fg = "#00A8B0"
+
+# soubory a složky
+dir_fg = "#4fc1ff"           # složky (světle modrá)
+file_fg = "#d6e2f0"
+
+# zvýraznění typů (podle ls barev ze screenshotu)
+exec_fg = "#98c379"          # spustitelné (zelená)
+link_fg = "#56b6c2"          # symlinky (tyrkys)
+archive_fg = "#e5c07b"       # archivy (žlutá)
+
+# metadata (permissions, owner, size…)
+meta_fg = "#7f9fbf"
+
+# warning / error
+warning_fg = "#e5c07b"
+error_fg = "#ff6b6b"
