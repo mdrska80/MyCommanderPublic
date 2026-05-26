@@ -5,6 +5,12 @@ It is inspired by Total Commander, M602, Norton Commander, and Midnight Commande
 
 ![MyCommander](images/mycommander.png)
 
+## Motivation
+I was in need for dual pane file manager. **Total commander** is ok on windows. Hard to use on other platforms. **Double commander** is simply not my style. I also need to use it in terminal in linux or under mac. I also need reasonable licence to use it in companies. 
+
+With this I found out I used **Midnight commander** under mac os and linux, Total commander under windows. But I want same experience, same muscle memory for all platforms. I also need ssh and ftp access as well as unified ssh client. Mayby I was looking wrong but this is my solution to this problem. If it will help you it will be good.  
+
+
 ## Core Idea
 
 MyCommander is a commander-style application for people who want to manage files quickly without constantly switching between windows. The foundation is two independent panels, classic function-key shortcuts from `F3` to `F10`, fast search, archive browsing, and a consistent control model for both local and remote filesystems.
@@ -156,7 +162,6 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 
 - Built-in viewer with `F3`, without leaving the application.
 - Text viewer with scrolling, line numbers, tab expansion, word wrap, and syntax highlighting.
-- Encoding picker for UTF-8, UTF-16, Windows-1250/1251/1252, ISO-8859, Shift-JIS, GBK, and more.
 - Per-path preferred encoding storage.
 - Text selection in the viewer by mouse or keyboard, copied with `Ctrl+C`.
 - Image viewer with terminal graphics protocol support and fallback rendering.
@@ -165,6 +170,47 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 - Editor supports cursor movement, text selection, clipboard, undo/redo, search, replace, save, and a status line.
 - Hex editor for binary edits with explicit save confirmation.
 - External viewer/editor support based on configurable rules for extensions and file types.
+- Fast switching `F3`(Viewer) -> hit `F3`(Viewer Hex) -> hit `F3`(Viewer) -> ...
+- Fast switching `F4`(Editor) -> hit `F4`(Editor Hex) -> hit `F4`(Editor) -> ...
+
+#### Encoding `F9`
+![Code pages](<images/CodePages.png>)
+
+- encodings can be filtered just by tuping
+- encoding dialog supports many encodings.
+- **System / Windows**
+	- 1250 Windows-1250 Central Europe
+	- 1251 Windows-1251 Cyrillic
+	- 1252 Windows-1252 Western Europe
+	- 1253 Windows-1253 Greek
+	- 1254 Windows-1254 Turkish
+	- 1257 Windows-1257 Baltic
+	- 1258 Windows-1258 Vietnamese
+
+- **Unicode**
+	- 65001 UTF-8
+	- 1200 UTF-16 LE
+	- 1201 UTF-16 BE
+
+- **ISO**
+	- 28592 ISO-8859-2 Central Europe
+	- 28595 ISO-8859-5 Cyrillic
+	- 28597 ISO-8859-7 Greek
+	- 28599 ISO-8859-9 Turkish
+	- 28605 ISO-8859-15 Western Europe with euro
+
+- **Cyrillic / legacy**
+	- 866 IBM866 Cyrillic DOS
+	- 20866 KOI8-R
+	- 21866 KOI8-U
+
+- **Asian**
+	- 932 Shift-JIS
+	- 936 GBK
+	- 949 EUC-KR
+	- 950 Big5
+	- 54936 GB18030
+
 
 ### Document Workspace
 
@@ -222,6 +268,14 @@ The inline terminal can use these commands for quick connections:
 - `cd ssh://user@host` or `ssh user@host` for a quick SSH connection
 - `cd smb://user:password@host/share` for a quick SMB connection
 - `cd \\host\share` for a quick SMB connection; credentials are requested when needed
+
+### Checksums
+![CalculateChecksums.png](<images/CalculateChecksums.png>)
+
+- Added checksums algoritms: CRC32/SFV, MD5, SHA1, SHA256, SHA512, BLAKE3
+- Checksums can be calculated and then copied to clipboard
+- Checksums can be stored to files (same format as Total Commander)
+- Checksums can be verified
 
 ### IP Scanner
 
