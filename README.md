@@ -234,16 +234,25 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 
 - Archives behave like virtual folders.
 - Pressing `Enter` on a supported archive opens its contents in the panel without manual extraction.
-- The virtual path in the panel shows the current location inside the archive.
+- The virtual path in the panel shows the current location inside the archive. - `/.../test.7z/Mods`
 - Navigation inside archives uses the same controls as normal directories.
 - `F3` can view a file inside an archive without extracting it manually.
 - `F4` can edit a file inside an archive without extracting it manually. It is automatically updated after save.
 - `F5` copies files out of an archive as extraction.
+- `F8` deletes from archive
 
 #### Supported formats
 - .zip, .jar, .war, .ear, .apk, .epub, .docx, .xlsx, .pptx, .odt, .ods, .odp, .cbz
 - .tar, .tar.gz, .tgz, .tar.bz2, .tbz, .tbz2, .tar.xz, .txz
 
+| Formát               | Browse | F3 / Shift+F3 | F5 extract | Copy/F5 do archivu | Delete | F4 edit/save | Create/pack | Heslo |
+| -------------------- | ------ | ------------- | ---------- | ------------------ | ------ | ------------ | ----------- | ----- |
+| ZIP                  | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ano   |
+| 7Z                   | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ne    |
+| TAR                  | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ne    |
+| TAR.GZ / TGZ         | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ne    |
+| TAR.BZ2 / TBZ / TBZ2 | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ne    |
+| TAR.XZ / TXZ         | ano    | ano           | ano        | ano                | ano    | ano          | ano         | ne    |
 ### Remote and Network Panels
 
 - FTP panel with active and passive modes.
