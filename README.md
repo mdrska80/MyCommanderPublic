@@ -222,13 +222,46 @@ The active query is shown at the bottom. Matching items are highlighted in the f
 ![Document Workspace tab switcher](<images/DocumentWorkspaceTabs.png>)
 - Available via `F12`.
 
-### Quick preview
+### Quick preview - CTRL+Q
 - reachable via `CTRL+Q`
 - in one pane list of files is displayed, in other pane is preview
-- for text files you can see text. Syntax highlighted if possible
-- for binary files you can see hex preview.
-- for images you can see image
-- for pal files you can see palette
+- for **text** files you can see text. Syntax highlighted if possible
+- for **binary** files you can see hex preview.
+- for **images** you can see image
+#### Palette files - \*.pal, \*.act
+![[PreviewACT.png]]
+- those are files which have 768 bytes
+- 3x256 colors
+- first color is at bytes 0,1,2
+- second color after that at indexes 3,4,5
+- yes I'm that old
+
+> An **ACT file** (Adobe Color Table) is an uncompressed binary file consisting of exactly 256 colors formatted as RGB triplets (256 colors \(\times \) 3 bytes = 768 bytes total)
+
+
+#### Markdown files - \*.md, \*.markdown
+![[PreviewMarkdown.png]]
+- most of my documentation is markdown so I have support for that
+- F1 help is also markdown
+- Tables are supported
+- Code syntax highlighting supported
+#### MOD files
+- Supported formats:
+	- mod
+	- s3m
+	- xm
+	- it
+	- stm
+	- digi
+	- sfx
+	- sfx2
+	- sfc
+
+#### CSV files - \*.csv, \*.tsv
+![[PreviewTable.png]]
+- formatted as a table
+- 
+
 
 ### Archives
 
@@ -346,6 +379,9 @@ The inline terminal can use these commands for quick connections:
 - Response preview uses syntax highlighting for JSON and XML.
 - The form supports multi-line headers, clipboard, text selection, mouse input, and scrolling.
 - When the file under the cursor changes, the REST client switches to the new context without breaking focus.
+
+### MOD Player
+- fdfd
 
 ### Command Line and Terminal Overlay
 

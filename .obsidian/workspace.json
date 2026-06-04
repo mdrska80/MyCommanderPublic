@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e1dcd97fdd9abce9",
+        "id": "f0a48eb57a8e9763",
         "type": "tabs",
         "children": [
           {
-            "id": "7ff48d9a7e1fb091",
+            "id": "b42b62e74cc494f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -183,8 +183,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "7ff48d9a7e1fb091",
+  "active": "b42b62e74cc494f2",
   "lastOpenFiles": [
+    "releases/alpha/windows/mdc.exe",
+    "releases/alpha/windows/mdc(1).exe",
+    "images/PreviewTable.png",
+    "README.md",
+    "images/PreviewACT.png",
+    "images/PreviewMarkdown.png",
+    "quake1palette.act",
+    "quake1palette.pal",
     "README.tar.gz"
   ]
 }
