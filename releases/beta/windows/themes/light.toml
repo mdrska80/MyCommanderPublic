@@ -1,0 +1,17 @@
+# MyCommander — Light theme
+
+bg = "#fafafa"
+fg = "#383a42"
+accent = "#4078f2"
+panel_border = "#c8c8c8"
+panel_border_active = "#4078f2"
+selection_bg = "#e5e5e5"
+selection_fg = "#383a42"
+cursor_bg = "#4078f2"
+cursor_fg = "#ffffff"
+status_bar_bg = "#ebebeb"
+status_bar_fg = "#646464"
+fn_key_bg = "#c8c8c8"
+fn_key_fg = "#383a42"
+header_fg = "#c82828"
+dir_fg = "#4078f2"

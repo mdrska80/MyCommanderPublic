@@ -1,0 +1,30 @@
+# MyCommander — "Neon Harbor"
+
+bg = "#081b2f"
+fg = "#d7e3f4"
+
+accent = "#27f0ff"
+
+panel_border = "#3f6fa8"
+panel_border_active = "#27f0ff"
+
+selection_bg = "#ff5a36"
+selection_fg = "#ffffff"
+
+cursor_bg = "#7df9ff"
+cursor_fg = "#001018"
+
+status_bar_bg = "#040f1f"
+status_bar_fg = "#9fc7ff"
+
+fn_key_bg = "#0f2d52"
+fn_key_fg = "#8fe9ff"
+
+header_fg = "#ffd166"
+dir_fg = "#7cc7ff"
+
+danger_bg = "#7a1d1d"
+danger_fg = "#ffd6d6"
+
+diff_removed_bg = "#5c2d36"
+diff_added_bg = "#214d3a"

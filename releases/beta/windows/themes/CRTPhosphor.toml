@@ -1,0 +1,27 @@
+# "CRT Phosphor"
+
+bg = "#08110d"
+fg = "#a7ffb2"
+
+accent = "#5cff87"
+
+panel_border = "#2f7a46"
+panel_border_active = "#5cff87"
+
+selection_bg = "#1e4d2b"
+selection_fg = "#d7ffe0"
+
+cursor_bg = "#c2ffd0"
+cursor_fg = "#001a08"
+
+status_bar_bg = "#050b08"
+status_bar_fg = "#8effa5"
+
+fn_key_bg = "#0d1f14"
+fn_key_fg = "#74ff96"
+
+header_fg = "#f0ff9a"
+dir_fg = "#d7ffd7"
+
+danger_bg = "#5c2222"
+danger_fg = "#ffc7c7"

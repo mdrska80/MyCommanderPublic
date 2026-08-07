@@ -1,0 +1,132 @@
+ftp_bookmarks = []
+ssh_bookmarks = []
+smb_bookmarks = []
+rest_client_requests = []
+
+[general]
+show_hidden = false
+quick_open_skip_ignored_dirs = true
+confirm_delete = true
+use_trash = true
+unicode_icons = true
+double_pane_ratio = 50
+date_format = "%Y-%m-%d %H:%M"
+size_format = "binary"
+read_file_headers = true
+auto_background_copy = false
+directory_brackets = false
+select_all_includes_dirs = false
+cmdline_always_visible = false
+ping_monitor_enabled = false
+ping_target = "8.8.8.8"
+anti_lock_widget_enabled = false
+
+[theme]
+name = "Nord"
+
+[keybindings]
+clipboard_paste = ["Ctrl+v"]
+ftp_connect = ["Ctrl+n"]
+switch_panel = ["Tab"]
+settings_smb_bookmarks = ["Ctrl+Shift+M"]
+clipboard_cut = ["Ctrl+x"]
+branch_view = ["Ctrl+b"]
+rest_client = ["Ctrl+Alt+R"]
+settings_colors = ["Ctrl+k"]
+settings_general = ["Ctrl+,"]
+pack_zip = [
+    "Shift+F5",
+    "Alt+F5",
+]
+find_files = ["Alt+F7"]
+cycle_sort = ["Ctrl+s"]
+compare_by_content = ["Ctrl+F11"]
+quit = [
+    "q",
+    "F10",
+]
+filter_manager = ["Ctrl+Shift+F"]
+copy = ["F5"]
+settings_ftp_bookmarks = ["Ctrl+Shift+B"]
+rename = ["F2"]
+settings_associations = ["Ctrl+Shift+A"]
+toggle_terminal_overlay = ["Ctrl+o"]
+new_file = ["Shift+F4"]
+quick_open = ["Ctrl+p"]
+toggle_log_overlay = ["Ctrl+Shift+O"]
+synchronize_directories = []
+refresh = ["Ctrl+r"]
+inline_rename = [
+    "Shift+F6",
+    "Ctrl+F6",
+]
+properties = ["Alt+Enter"]
+command_palette = [
+    "Ctrl+Shift+P",
+    "Ctrl+Alt+P",
+]
+select_all = ["Ctrl+a"]
+ip_scan = ["Ctrl+Alt+I"]
+move = ["F6"]
+calculate_occupied_space = ["Ctrl+l"]
+view = ["F3"]
+change_attributes = ["Shift+F8"]
+delete = [
+    "F8",
+    "Delete",
+]
+show_operation_queue = ["Ctrl+j"]
+settings_keybindings = ["Ctrl+Shift+K"]
+swap_panels = ["Ctrl+u"]
+edit = ["F4"]
+sort_by_date = ["Ctrl+F5"]
+sort_by_ext = ["Ctrl+F4"]
+clipboard_copy = ["Ctrl+c"]
+ssh_connect = ["Ctrl+Shift+n"]
+ssh_terminal_connect = ["Ctrl+Alt+T"]
+toggle_hidden = ["Ctrl+h"]
+mkdir = ["F7"]
+settings_columns = ["Ctrl+Shift+C"]
+settings_ssh_bookmarks = ["Ctrl+Shift+S"]
+sort_by_size = []
+smb_connect = ["Ctrl+Alt+B"]
+sort_by_name = ["Ctrl+F3"]
+quick_view = ["Ctrl+q"]
+
+[quick_search]
+mode = "jump"
+timeout_ms = 0
+fuzzy = false
+case_sensitive = false
+
+[tools]
+viewer_default = "internal"
+editor_default = "internal"
+viewer = []
+editor = []
+
+[viewer]
+word_wrap = true
+
+[[viewer.syntax]]
+name = "XML"
+extensions = [".spr"]
+
+[git]
+enabled = true
+show_column = true
+cache_secs = 5
+
+[columns.left]
+visible = [
+    "name",
+    "size",
+    "modified",
+]
+
+[columns.right]
+visible = [
+    "name",
+    "size",
+    "modified",
+]

@@ -1,0 +1,27 @@
+# "Cyberdeck"
+
+bg = "#0a0d16"
+fg = "#c8d3f5"
+
+accent = "#00f0ff"
+
+panel_border = "#3c5a92"
+panel_border_active = "#00f0ff"
+
+selection_bg = "#ff007c"
+selection_fg = "#ffffff"
+
+cursor_bg = "#00ffe1"
+cursor_fg = "#000814"
+
+status_bar_bg = "#05070d"
+status_bar_fg = "#8cb8ff"
+
+fn_key_bg = "#10182b"
+fn_key_fg = "#78f0ff"
+
+header_fg = "#ffe66d"
+dir_fg = "#6fb7ff"
+
+danger_bg = "#7a1e3a"
+danger_fg = "#ffd6e5"
